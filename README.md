@@ -1,5 +1,5 @@
-# Clean Code html
+# Semaine de pratique du CSS avancé
 
-## exercice de pratique sur les bases du html
+## Pratiquer chaque soir et reviser
 
-`je découvre le markdown`
+`je suis un fichier markdown (faire des recherches sur ce format)`
