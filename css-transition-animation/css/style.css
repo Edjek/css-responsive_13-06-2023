@@ -15,11 +15,13 @@ h1 {
     padding: 20px;
 }
 
+/* CONTAINER */
 .container {
     width: 100px;
     height: 100px;
+    margin: 50px auto;
     background-color: pink;
-    transition: width 3s 1s, background-color 2s 3s;
+    transition: width 3s 0.5s, background-color 2s 3s;
 }
 
 .container:hover {
@@ -27,6 +29,7 @@ h1 {
     width: 300px;
 }
 
+/* LINK */
 .link {
     color: #333;
     text-decoration: none;
@@ -37,9 +40,11 @@ h1 {
     color: red;
 }
 
+/* TRANSITION */
 .transition-delay {
     width: 200px;
     height: 300px;
+    margin: 50px auto;
     background-color: orange;
     transition: width 1s, height 1s 1s, background-color 1s 2s;
 }
@@ -50,6 +55,7 @@ h1 {
     background-color: pink;
 }
 
+/* TRANSFORM */
 .transition-transform {
     width: 100px;
     height: 100px;
@@ -72,12 +78,13 @@ h1 {
     /* translate() pour déplacer l'élément */
     /* translateX() pour l'axe des abscisses */
     /* translateY() pour l'axe des ordonnées */
-    transform: translate(-100%, -100%);
+    transform: translate(100%, 100%);
 
+    /* On peut cumuler les valeurs de la propriété transform */
     /* transform: scale(2) rotate(-1260deg) ; */
 }
 
-/* creer une div 50px sur 50px */
+/* TRANSFORM */
 .rotation {
     width: 50px;
     height: 50px;
@@ -92,7 +99,7 @@ h1 {
     transform: rotate(720deg);
 }
 
-/* creer un rond 100px 100px */
+/* CIRCLE */
 .circle {
     width: 100px;
     height: 100px;
@@ -108,9 +115,8 @@ h1 {
 .dad-circle {
     background-color: pink;
 }
-/* au survole il se deplace de 4 fois sa taille vers la droite */
-/* transition */
 
+/* TEXT APPARITION */
 .txt-container {
     width: 400px;
     height: 200px;
@@ -131,6 +137,7 @@ h1 {
     opacity: 1;
 }
 
+/* CIRCLE ANIMATION */
 .circle-animation {
     animation: moove 2s 2s infinite alternate;
 }
@@ -138,7 +145,8 @@ h1 {
 @keyframes moove {
     from {
         transform: translate(0);
-    } to {
+    }
+    to {
         transform: translate(400%);
     }
 }
