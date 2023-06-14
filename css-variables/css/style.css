@@ -1,0 +1,39 @@
+/* Déclaration de variables */
+:root {
+    --main-cl: rgb(134, 105, 31);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+/* Pour utiliser une variable, il faut mettre var(--nom-de-la-variable) */
+    color: var(--main-cl);
+}
+
+.btn {
+    padding: 15px 45px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    color:  var(--main-cl);
+    background-color: #fff;
+    border: 1px solid var(--main-cl);
+}
+
+.btn-secondary {
+    background-color: var(--main-cl);
+    color: #fff;
+    border: none;
+}

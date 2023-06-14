@@ -37,8 +37,7 @@ li:nth-child(4) {
 }
 
 /* 8. sélectionnez tous les li sauf le 5ème et donnez-leur un fond "midnightblue" */
-li:not(:nth-child(5)),
-li:not(:nth-child(1)) {
+li:not(:nth-child(5)):not(:nth-child(1)) {
     background-color: midnightblue;
 }
 

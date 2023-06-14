@@ -6,5 +6,41 @@
         <title>CSS - Image Responsive</title>
         <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <div>
+            <h1>Les images responsives en css</h1>
+            <section class="container">
+                <img
+                    srcset="
+                        ./img/landscape-small.jpg   640w,
+                        ./img/landscape-medium.jpg 1280w,
+                        ./img/landscape-big.jpg    1920w
+                    "
+                    sizes="80vw"
+                    src="./img/landscape-big.jpg"
+                    alt="un superbe paysage de montagne"
+                />
+            </section>
+            <section class="container">
+                <picture>
+                    <source
+                        media="(max-width:640px)"
+                        srcset="./img/mobile-landscape.jpg"
+                    />
+                    <source
+                        media="(max-width:1280px)"
+                        srcset="./img/landscape-medium.jpg"
+                    />
+                    <source
+                        media="(max-width:1920px)"
+                        srcset="./img/landscape-big.jpg"
+                    />
+                    <img
+                        src="./img/landscape-big.jpg"
+                        alt="un superbe paysage de montagne"
+                    />
+                </picture>
+            </section>
+        </div>
+    </body>
 </html>
