@@ -15,7 +15,6 @@ h1 {
     padding: 20px;
 }
 
-
 .container {
     width: 100px;
     height: 100px;
@@ -49,4 +48,97 @@ h1 {
     width: 500px;
     height: 100px;
     background-color: pink;
+}
+
+.transition-transform {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: green;
+    transition: 1s;
+}
+
+.transition-transform:hover {
+    /* Propriétés à privilégier pour les transitions et les animations */
+    /* opacity: 0; */
+    /* scale() permet de zoomer l'element*/
+    /* scaleX() pour l'axe des abscisses */
+    /* scaleY() pour l'axe des ordonnées */
+    transform: scaleX(2);
+    /* rotate() pour faire des rotations */
+    /* rotateX() pour l'axe des abscisses */
+    /* rotateY() pour l'axe des ordonnées */
+    transform: rotateX(360deg);
+    /* translate() pour déplacer l'élément */
+    /* translateX() pour l'axe des abscisses */
+    /* translateY() pour l'axe des ordonnées */
+    transform: translate(-100%, -100%);
+
+    /* transform: scale(2) rotate(-1260deg) ; */
+}
+
+/* creer une div 50px sur 50px */
+.rotation {
+    width: 50px;
+    height: 50px;
+    margin: 100px auto;
+    background-color: rgb(81, 122, 227);
+    transition: width 0.5s, height 0.5s 0.5s, transform 0.5s 1s;
+}
+
+.rotation:hover {
+    width: 200px;
+    height: 100px;
+    transform: rotate(720deg);
+}
+
+/* creer un rond 100px 100px */
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    transition: 1s;
+}
+
+.dad-circle:hover .circle {
+    transform: translate(400%);
+}
+
+.dad-circle {
+    background-color: pink;
+}
+/* au survole il se deplace de 4 fois sa taille vers la droite */
+/* transition */
+
+.txt-container {
+    width: 400px;
+    height: 200px;
+    margin: 50px auto;
+    padding: 1em;
+    background-color: beige;
+    overflow: hidden;
+}
+
+.txt-container p {
+    transition: 2s;
+    transform: translateY(150%);
+    opacity: 0;
+}
+
+.txt-container:hover p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.circle-animation {
+    animation: moove 2s 2s infinite alternate;
+}
+
+@keyframes moove {
+    from {
+        transform: translate(0);
+    } to {
+        transform: translate(400%);
+    }
 }
